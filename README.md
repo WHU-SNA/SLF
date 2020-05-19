@@ -1,7 +1,8 @@
 # SLF
 We provide the Python implementation of SLF for reference.
 
-# Citing
+# Cite
+
 '''
 @inproceedings{xu2019link,
   title={Link prediction with signed latent factors in signed social networks},
