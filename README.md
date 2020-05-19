@@ -2,6 +2,7 @@
 We provide the Python implementation of SLF for reference.
 
 # Cite
+If you find the code useful in your research, please cite the original paper:
 
 ```
 @inproceedings{xu2019link,
