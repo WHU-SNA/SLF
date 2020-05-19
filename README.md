@@ -14,3 +14,6 @@ If you find the code useful in your research, please cite the original paper:
   year={2019}
 }
 ```
+
+## Note
+Except for link prediction, the node representations learned by SLF achieve state-of-the-art performance in sign prediction task as well.
