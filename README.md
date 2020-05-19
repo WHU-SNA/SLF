@@ -3,7 +3,7 @@ We provide the Python implementation of SLF for reference.
 
 # Cite
 
-'''
+```
 @inproceedings{xu2019link,
   title={Link prediction with signed latent factors in signed social networks},
   author={Xu, Pinghua and Hu, Wenbin and Wu, Jia and Du, Bo},
@@ -11,4 +11,4 @@ We provide the Python implementation of SLF for reference.
   pages={1046--1054},
   year={2019}
 }
-'''
+```
