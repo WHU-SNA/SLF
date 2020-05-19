@@ -2,6 +2,8 @@
 Python implementation of the method proposed in the paper:
 "[Link Prediction with Signed Latent Factors in Signed Social Networks](https://dl.acm.org/doi/pdf/10.1145/3292500.3330850)", Pinghua Xu, Wenbin Hu, Jia Wu and Bo Du, SIGKDD 2019.
 
+SLF can be viewed as a signed network embedding architecture.
+
 ## Cite
 If you find the code useful in your research, please cite the original paper:
 
