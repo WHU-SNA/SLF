@@ -12,7 +12,7 @@ def fa(x):
     return tmp
 
 
-dir_path = 'Elec/80/'
+dir_path = 'WikiElec/80/'
 dim = 32
 learning_rate_0 = 0.025
 noise_size = 5
