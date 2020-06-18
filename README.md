@@ -56,7 +56,7 @@ The code takes an input graph in `txt` format. Every row indicates an edge betwe
 --link-prediction    BOOL     Make link prediction or not          Default=False
 --sign-prediction    BOOL     Make sign prediction or not          Default=True
 ```
-**NOTE** As sign-prediction is a more popular evaluation task, `--link-prediction` is set to `False` and `--sign-prediction` is set to `True` by default. You can refer to our paper to find the difference between the two tasks.
+**NOTE** As **sign prediction** is a more popular evaluation task, `--link-prediction` is set to `False` and `--sign-prediction` is set to `True` by default. You can refer to our paper to find the difference between the two tasks.
 
 ## Examples
 Train an SLF model on the deafult `WikiElec` dataset, output the performance on sign prediction task, and save the embeddings:
