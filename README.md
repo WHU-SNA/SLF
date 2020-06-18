@@ -129,7 +129,7 @@ In our paper, we used the following methods for comparison:
 - `LSNE`    "Solving link-oriented tasks in signed network via an embedding approach"
 - `SIDE`    "Side: representation learning in signed directed networks" [[source](https://datalab.snu.ac.kr/side/)]
 
-`MF` and `LSNE` are not not open-sourced, but if you want our implementation of these methods, email to xupinghua@whu.edu.cn
+`MF` and `LSNE` are not open-sourced, but if you want our implementation of these methods, email to xupinghua@whu.edu.cn
 
 ## Cite
 If you find this repository useful in your research, please cite our paper:
