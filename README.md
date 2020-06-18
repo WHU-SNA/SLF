@@ -26,12 +26,21 @@ The code takes an input graph in `txt` format. Every row indicates an edge betwe
 | 1 | 2 | 1 |
 | 2 | 4 | -1 |
 
-**NOTE** All the used graphs are *directed*. However, if you want to handle an *undirected* graph, modify your input file to make that each edge (u, v, w) constitutes two rows in the file like the following:
+**NOTE** All the used graphs are *directed*. However, if you want to handle an *undirected* graph, modify your input file to make that each edge (u, v, w) constitutes two rows of the file like the following:
 
 | Source node | Target node | Weight |
 | :-----:| :----: | :----: |
 | u | v | w |
 | v | u | w |
+
+## Options
+### Input and output options
+```
+--edge-path    STR    Input file path    Default="./input/WikiElec.txt"
+--outward-embedding-path    STR    Outward embedding path    Default"./output/WikiElec_outward"
+```
+
+###
 
 ## Cite
 If you find the code useful in your research, please cite the original paper:
