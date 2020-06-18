@@ -98,7 +98,24 @@ Sign prediction, epoch 2: AUC 0.838, F1 0.739
 Link prediction, epoch 2: AUC@p 0.885, AUC@n 0.762, AUC@non 0.867
 ```
 
-When the training is ended up, the evaluation result is printed in tabular format like the following:
+When the training is ended up, the evaluation result is printed in tabular format. If `--link-prediction==True`, the results are printed like the following:
+| Epoch | AUC@p | AUC@n | AUC@non |
+| :-----:| :----: | :----: | :----: |
+| 0 | 0.901 | 0.750 | 0.878 |
+| 1 | 0.882 | 0.739 | 0.855 |
+| 2 | 0.885 | 0.762 | 0.867 |
+| ... | ... | ... | ... |
+| 19 | 0.943 | 0.920 | 0.948 |
+
+And if `--sign-prediction==True`, the results are printed like the following:
+| Epoch | AUC | Macro-F1 |
+| :-----:| :----: | :----: |
+| 0 | 0.832 | 0.697 |
+| 1 | 0.858 | 0.730 |
+| 2 | 0.838 | 0.739 |
+| ... | ... | ... |
+| 19 | 0.905 | 0.802 |
+
 
 ### Node embeddings
 The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`). Note that if the maximal node ID is 36, then the embedding matrix has 36+1 rows ordered by node ID (as the ID can start from 0). Although some nodes may do not exist (e.g., node 11 is removed from the original dataset), it does not matter.
