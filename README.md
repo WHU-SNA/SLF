@@ -6,7 +6,23 @@ Python implementation of the method proposed in the paper:
 This repository is organised as follows:
 - `input/` contains the four datasets downloaded used in the experiments;
 - `output/` is the directory to store the learned node embeddings;
-- `src/` contains the implementation of the proposed SLF method;
+- `src/` contains the implementation of the proposed SLF method.
+
+## Requirements
+The implementation is tested under Python 3.7, with the folowing packages installed:
+- `networkx==2.3`
+- `numpy==1.16.5`
+- `scikit-learn==0.21.3`
+- `texttable==1.6.2`
+- `tqdm==4.36.1`
+
+## Input
+The code takes an input graph in `txt` format. Every row indicates an edge between two nodes separated by a ` ` or `\t`. The file does not contain a header. Nodes can be indexed starting with any non-negative number. Four sample datasets (donwloaded from [SNAP](http://snap.stanford.edu/data/#signnets), but node ID is resorted) `WikiElec`, `WikiRfa`, `Slashdot` and `Epinions` are included in the `input/` directory. The structure of the input file is the following:
+|Source node|Target node|Weight|
+|0|1|-1|
+|1|3|1|
+|1|2|1|
+|2|4|-1|
 
 ## Cite
 If you find the code useful in your research, please cite the original paper:
