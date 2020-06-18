@@ -51,13 +51,26 @@ The code takes an input graph in `txt` format. Every row indicates an edge betwe
 ```
 ### Evaluation options
 ```
---test-size          FLOAT    Test dataset size Default==0.2
---split-seed         INT      Random seed for splitting dataset Default==16
---link-prediction    BOOL     Make link prediction or not Default=False
---sign-prediction    BOOL     Make sign prediction or not Default=True
+--test-size          FLOAT    Test ratio                           Default==0.2
+--split-seed         INT      Random seed for splitting dataset    Default==16
+--link-prediction    BOOL     Make link prediction or not          Default=False
+--sign-prediction    BOOL     Make sign prediction or not          Default=True
 ```
 
-###
+## Examples
+Train an SLF model on the deafult `WikiElec` dataset, output the performance on sign prediction task, and save the embeddings:
+```
+python src/main.py
+```
+Train an SLF model with custom epoch number and test ratio:
+```
+python src/main.py --epochs 30 --test-size 0.3
+```
+
+Train an SLF model on the `WikiRfa` dataset, perform link prediction task but not sign prediction task:
+```
+python src/main.py --edge-path ./input/WikiRfa.txt --outward-embedding-path ./output/WikiElec_outward --inward-embedding-path ./output/WikiElec_inward --link-prediction True --sign-prediction False
+```
 
 ## Cite
 If you find the code useful in your research, please cite the original paper:
