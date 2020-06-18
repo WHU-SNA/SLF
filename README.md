@@ -92,10 +92,10 @@ Epoch 0 Optimizing: 100%|██████████████████�
 Evaluating...
 Sign prediction, epoch 0: AUC 0.832, F1 0.697
 Link prediction, epoch 0: AUC@p 0.901, AUC@n 0.750, AUC@non 0.878
-Epoch 2 Optimizing: 100%|██████████████████████████████████████| 6637/6637 [00:18<00:00, 349.84it/s]
+Epoch 1 Optimizing: 100%|██████████████████████████████████████| 6637/6637 [00:19<00:00, 345.80it/s]
 Evaluating...
-Sign prediction, epoch 2: AUC 0.838, F1 0.739
-Link prediction, epoch 2: AUC@p 0.885, AUC@n 0.762, AUC@non 0.867
+Sign prediction, epoch 1: AUC 0.858, F1 0.730
+Link prediction, epoch 1: AUC@p 0.882, AUC@n 0.739, AUC@non 0.855
 ```
 
 When the training is ended up, the evaluation results are printed in tabular format. If `--sign-prediction==True`, the results of sign prediction are printed like the following:
