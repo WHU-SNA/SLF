@@ -36,8 +36,25 @@ The code takes an input graph in `txt` format. Every row indicates an edge betwe
 ## Options
 ### Input and output options
 ```
---edge-path    STR    Input file path    Default="./input/WikiElec.txt"
---outward-embedding-path    STR    Outward embedding path    Default"./output/WikiElec_outward"
+--edge-path                 STR    Input file path           Default=="./input/WikiElec.txt"
+--outward-embedding-path    STR    Outward embedding path    Default=="./output/WikiElec_outward"
+--inward-embedding-path     STR    Inward embedding path     Default=="./output/WikiElec_inward"
+```
+### Model options
+```
+--epochs          INT     Number of training epochs    Default==20
+--k1              INT     Positive SLF dimension       Default==32
+--k2              INT     Negative SLF dimension       Default==32
+--p0              FLOAT   Effect of no feedback        Default==0.001
+--n               INT     Number of noise samples      Default==5
+--learning-rate   FLOAT   Leaning rate                 Default==0.025
+```
+### Evaluation options
+```
+--test-size          FLOAT    Test dataset size Default==0.2
+--split-seed         INT      Random seed for splitting dataset Default==16
+--link-prediction    BOOL     Make link prediction or not Default=False
+--sign-prediction    BOOL     Make sign prediction or not Default=True
 ```
 
 ###
