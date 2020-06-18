@@ -1,5 +1,5 @@
 # SLF
-Python implementation of the method proposed in:
+Python implementation of the method proposed in
 "[Link Prediction with Signed Latent Factors in Signed Social Networks](https://dl.acm.org/doi/pdf/10.1145/3292500.3330850)", Pinghua Xu, Wenbin Hu, Jia Wu and Bo Du, SIGKDD 2019.
 
 ## Overview
