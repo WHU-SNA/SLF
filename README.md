@@ -19,19 +19,19 @@ The implementation is tested under Python 3.7, with the folowing packages instal
 ## Input
 The code takes an input graph in `.txt` format. Every row indicates an edge between two nodes separated by a `space` or `\t`. The file does not contain a header. Nodes can be indexed starting with any non-negative number. Four sample graphs (donwloaded from [SNAP](http://snap.stanford.edu/data/#signnets), but node ID is resorted) `WikiElec`, `WikiRfa`, `Slashdot` and `Epinions` are included in the `input/` directory. The structure of the input file is the following:
 
-| Source node | Target node | Weight |
+| Source node | Target node | Sign |
 | :-----:| :----: | :----: |
 | 0 | 1 | -1 |
 | 1 | 3 | 1 |
 | 1 | 2 | 1 |
 | 2 | 4 | -1 |
 
-**NOTE** All the used graphs are **directed**. However, if you want to handle an **undirected** graph, modify your input file to make that each edge (u, v, w) constitutes two rows of the file like the following:
+**NOTE** All the used graphs are **directed**. However, if you want to handle an **undirected** graph, modify your input file to make that each edge (u, v, s) constitutes two rows of the file like the following:
 
-| Source node | Target node | Weight |
+| Source node | Target node | Sign |
 | :-----:| :----: | :----: |
-| u | v | w |
-| v | u | w |
+| u | v | s |
+| v | u | s |
 
 ## Options
 #### Input and output options
