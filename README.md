@@ -34,13 +34,13 @@ The code takes an input graph in `.txt` format. Every row indicates an edge betw
 | v | u | w |
 
 ## Options
-### Input and output options
+#### Input and output options
 ```
 --edge-path                 STR      Input file path                      Default=="./input/WikiElec.txt"
 --outward-embedding-path    STR      Outward embedding path               Default=="./output/WikiElec_outward"
 --inward-embedding-path     STR      Inward embedding path                Default=="./output/WikiElec_inward"
 ```
-### Model options
+#### Model options
 ```
 --epochs                    INT      Number of training epochs            Default==20
 --k1                        INT      Positive SLF dimension               Default==32
@@ -49,7 +49,7 @@ The code takes an input graph in `.txt` format. Every row indicates an edge betw
 --n                         INT      Number of noise samples              Default==5
 --learning-rate             FLOAT    Leaning rate                         Default==0.025
 ```
-### Evaluation options
+#### Evaluation options
 ```
 --test-size                 FLOAT    Test ratio                           Default==0.2
 --split-seed                INT      Random seed for splitting dataset    Default==16
