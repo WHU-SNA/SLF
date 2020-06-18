@@ -104,6 +104,8 @@ When the training is ended up, the evaluation result is printed in tabular forma
 The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`).
 You can use them for any purpose in addition to the two performed tasks.
 
+## Baselines
+
 
 ## Cite
 If you find this repository useful in your research, please cite our paper:
@@ -117,3 +119,5 @@ If you find this repository useful in your research, please cite our paper:
   year={2019}
 }
 ```
+
+If you have any question about this repository or our paper, email to xupinghua@whu.edu.cn
