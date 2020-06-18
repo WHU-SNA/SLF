@@ -74,7 +74,7 @@ Train an SLF model on the `WikiRfa` dataset, perform link prediction task but no
 python src/main.py --edge-path ./input/WikiRfa.txt --outward-embedding-path ./output/WikiElec_outward --inward-embedding-path ./output/WikiElec_inward --link-prediction True --sign-prediction False
 ```
 
-If you want to learn node embedding for other use, run:
+If you want to learn node embedding for other use and not to waste time performing link prediction or sign prediction, then run:
 ```
 python src/main.py --link-prediction False --sign-prediction False
 ```
