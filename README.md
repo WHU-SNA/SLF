@@ -2,7 +2,11 @@
 Python implementation of the method proposed in the paper:
 "[Link Prediction with Signed Latent Factors in Signed Social Networks](https://dl.acm.org/doi/pdf/10.1145/3292500.3330850)", Pinghua Xu, Wenbin Hu, Jia Wu and Bo Du, SIGKDD 2019.
 
-The representation learning module of SLF can be used as an independent signed network embedding architecture.
+## Overview
+This repository is organised as follows:
+- `input/` contains the four datasets downloaded used in the experiments;
+- `output/` is the directory to store the learned node embeddings;
+- `src/` contains the implementation of the proposed SLF method;
 
 ## Cite
 If you find the code useful in your research, please cite the original paper:
