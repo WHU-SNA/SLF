@@ -105,7 +105,11 @@ The learned embeddings are saved in `output/` in `.npz` format (supported by `Nu
 You can use them for any purpose in addition to the two performed tasks.
 
 ## Baselines
-
+In our paper, we used the following methods for comparison:
+- `SIGNet`  "Signet: Scalable embeddings for signed networks" [source](https://github.com/raihan2108/signet)
+- `MF`      "Low rank modeling of signed networks"
+- `LSNE`    "Solving link-oriented tasks in signed network via an embedding approach"
+- `SIDE`    "Side: representation learning in signed directed networks" [source](https://datalab.snu.ac.kr/side/)
 
 ## Cite
 If you find this repository useful in your research, please cite our paper:
