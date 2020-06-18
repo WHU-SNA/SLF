@@ -118,7 +118,7 @@ And if `--link-prediction==True`, the results are printed like the following:
 
 
 ### Node embeddings
-The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`). Note that if the maximal node ID is 36, then the embedding matrix has 36+1 rows ordered by node ID (as the ID can start from 0). Although some nodes may do not exist (e.g., node 11 is removed from the original dataset), it does not matter.
+The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`). Note that if the maximal node ID is 36, then the embedding matrix has 36+1 rows ordered by node ID (as the ID can start from 0). Although some nodes may not exist (e.g., node 11 is removed from the original dataset), it does not matter.
 
 You can use them for any purpose in addition to the two performed tasks.
 
