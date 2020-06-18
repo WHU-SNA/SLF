@@ -4,7 +4,7 @@ Python implementation of the method proposed in
 
 ## Overview
 This repository is organised as follows:
-- `input/` contains the four datasets downloaded used in the experiments;
+- `input/` contains the four graphs `WikiElec` `WikiRfa` `Slashdot` `Epinions` used in the experiments;
 - `output/` is the directory to store the learned node embeddings;
 - `src/` contains the implementation of the proposed SLF method.
 
