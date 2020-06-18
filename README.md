@@ -81,7 +81,7 @@ python src/main.py --link-prediction False --sign-prediction False
 
 ## Output
 
-### Tasks on signed networks
+#### Tasks on signed networks
 For **sign prediction** task, we use `AUC` and `Macro-F1` for evaluation.
 
 For **link prediction** task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
@@ -117,7 +117,7 @@ And if `--link-prediction==True`, the results of link prediction are printed lik
 | 19 | 0.943 | 0.920 | 0.948 |
 
 
-### Node embeddings
+#### Node embeddings
 The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`). Note that if the maximal node ID is 36, then the embedding matrix has 36+1 rows ordered by node ID (as the ID can start from 0). Although some nodes may not exist (e.g., node 11 is removed from the original dataset), it does not matter.
 
 You can use them for any purpose in addition to the two performed tasks.
