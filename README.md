@@ -80,10 +80,12 @@ python src/main.py --link-prediction False --sign-prediction False
 ```
 
 ## Output
-The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`).
 
-For sign prediction task, we use `AUC` and `Macro-F1` for evaluation.
-For link prediction task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
+### Tasks on signed networks
+For *sign prediction* task, we use `AUC` and `Macro-F1` for evaluation.
+
+For *link prediction* task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
+
 We perform the evaluation after each epoch, and output the provisional result like the following:
 ```
 Epoch 0 Optimizing: 100%|██████████████████████████████████████| 6637/6637 [00:19<00:00, 343.23it/s]
@@ -96,8 +98,15 @@ Sign prediction, epoch 2: AUC 0.838, F1 0.739
 Link prediction, epoch 2: AUC@p 0.885, AUC@n 0.762, AUC@non 0.867
 ```
 
+When the training is ended up, the evaluation result is printed in tabular format like the following:
+
+### Node embeddings
+The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`).
+You can use them for any purpose in addition to the two performed tasks.
+
+
 ## Cite
-If you find the code useful in your research, please cite the original paper:
+If you find this repository useful in your research, please cite our paper:
 
 ```
 @inproceedings{xu2019link,
@@ -108,6 +117,3 @@ If you find the code useful in your research, please cite the original paper:
   year={2019}
 }
 ```
-
-## Note
-Except for link prediction, the node representations learned by SLF achieve state-of-the-art performance in sign prediction task as well.
