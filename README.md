@@ -26,7 +26,7 @@ The code takes an input graph in `txt` format. Every row indicates an edge betwe
 | 1 | 2 | 1 |
 | 2 | 4 | -1 |
 
-**NOTE** All the used graphs are *directed*. However, if you want to handle an *undirected* graph, modify your input file to make that each edge (u, v, w) constitutes two rows of the file like the following:
+**NOTE** All the used graphs are **directed**. However, if you want to handle an **undirected** graph, modify your input file to make that each edge (u, v, w) constitutes two rows of the file like the following:
 
 | Source node | Target node | Weight |
 | :-----:| :----: | :----: |
@@ -82,9 +82,9 @@ python src/main.py --link-prediction False --sign-prediction False
 ## Output
 
 ### Tasks on signed networks
-For *sign prediction* task, we use `AUC` and `Macro-F1` for evaluation.
+For **sign prediction** task, we use `AUC` and `Macro-F1` for evaluation.
 
-For *link prediction* task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
+For **link prediction** task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
 
 We perform the evaluation after each epoch, and output the provisional result like the following:
 ```
