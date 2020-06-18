@@ -56,13 +56,14 @@ The code takes an input graph in `txt` format. Every row indicates an edge betwe
 --link-prediction    BOOL     Make link prediction or not          Default=False
 --sign-prediction    BOOL     Make sign prediction or not          Default=True
 ```
-**NOTE** As sign-prediction is more popular evaluation task, `--link-prediction` is set to `False` and `--sign-prediction` is set to `True` by default. You can refer to our paper to find the difference between the two tasks.
+**NOTE** As sign-prediction is a more popular evaluation task, `--link-prediction` is set to `False` and `--sign-prediction` is set to `True` by default. You can refer to our paper to find the difference between the two tasks.
 
 ## Examples
 Train an SLF model on the deafult `WikiElec` dataset, output the performance on sign prediction task, and save the embeddings:
 ```
 python src/main.py
 ```
+
 Train an SLF model with custom epoch number and test ratio:
 ```
 python src/main.py --epochs 30 --test-size 0.3
@@ -71,6 +72,28 @@ python src/main.py --epochs 30 --test-size 0.3
 Train an SLF model on the `WikiRfa` dataset, perform link prediction task but not sign prediction task:
 ```
 python src/main.py --edge-path ./input/WikiRfa.txt --outward-embedding-path ./output/WikiElec_outward --inward-embedding-path ./output/WikiElec_inward --link-prediction True --sign-prediction False
+```
+
+If you want to learn node embedding for other use, run:
+```
+python src/main.py --link-prediction False --sign-prediction False
+```
+
+## Output
+The learned embeddings are saved in `output/` in `.npz` format (supported by `Numpy`).
+
+For sign prediction task, we use `AUC` and `Macro-F1` for evaluation.
+For link prediction task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
+We perform the evaluation after each epoch, and output the provisional result like the following:
+```
+Epoch 0 Optimizing: 100%|██████████████████████████████████████| 6637/6637 [00:19<00:00, 343.23it/s]
+Evaluating...
+Sign prediction, epoch 0: AUC 0.832, F1 0.697
+Link prediction, epoch 0: AUC@p 0.901, AUC@n 0.750, AUC@non 0.878
+Epoch 2 Optimizing: 100%|██████████████████████████████████████| 6637/6637 [00:18<00:00, 349.84it/s]
+Evaluating...
+Sign prediction, epoch 2: AUC 0.838, F1 0.739
+Link prediction, epoch 2: AUC@p 0.885, AUC@n 0.762, AUC@non 0.867
 ```
 
 ## Cite
