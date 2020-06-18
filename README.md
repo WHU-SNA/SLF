@@ -36,25 +36,25 @@ The code takes an input graph in `.txt` format. Every row indicates an edge betw
 ## Options
 ### Input and output options
 ```
---edge-path                 STR    Input file path           Default=="./input/WikiElec.txt"
---outward-embedding-path    STR    Outward embedding path    Default=="./output/WikiElec_outward"
---inward-embedding-path     STR    Inward embedding path     Default=="./output/WikiElec_inward"
+--edge-path                 STR      Input file path                      Default=="./input/WikiElec.txt"
+--outward-embedding-path    STR      Outward embedding path               Default=="./output/WikiElec_outward"
+--inward-embedding-path     STR      Inward embedding path                Default=="./output/WikiElec_inward"
 ```
 ### Model options
 ```
---epochs          INT     Number of training epochs    Default==20
---k1              INT     Positive SLF dimension       Default==32
---k2              INT     Negative SLF dimension       Default==32
---p0              FLOAT   Effect of no feedback        Default==0.001
---n               INT     Number of noise samples      Default==5
---learning-rate   FLOAT   Leaning rate                 Default==0.025
+--epochs                    INT      Number of training epochs            Default==20
+--k1                        INT      Positive SLF dimension               Default==32
+--k2                        INT      Negative SLF dimension               Default==32
+--p0                        FLOAT    Effect of no feedback                Default==0.001
+--n                         INT      Number of noise samples              Default==5
+--learning-rate             FLOAT    Leaning rate                         Default==0.025
 ```
 ### Evaluation options
 ```
---test-size          FLOAT    Test ratio                           Default==0.2
---split-seed         INT      Random seed for splitting dataset    Default==16
---link-prediction    BOOL     Make link prediction or not          Default=False
---sign-prediction    BOOL     Make sign prediction or not          Default=True
+--test-size                 FLOAT    Test ratio                           Default==0.2
+--split-seed                INT      Random seed for splitting dataset    Default==16
+--link-prediction           BOOL     Make link prediction or not          Default=False
+--sign-prediction           BOOL     Make sign prediction or not          Default=True
 ```
 **NOTE** As **sign prediction** is a more popular evaluation task, `--link-prediction` is set to `False` and `--sign-prediction` is set to `True` by default. You can refer to our paper to find the difference between the two tasks.
 
