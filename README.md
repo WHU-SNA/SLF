@@ -98,7 +98,7 @@ Sign prediction, epoch 2: AUC 0.838, F1 0.739
 Link prediction, epoch 2: AUC@p 0.885, AUC@n 0.762, AUC@non 0.867
 ```
 
-When the training is ended up, the evaluation results are printed in tabular format. If `--sign-prediction==True`, the results are printed like the following:
+When the training is ended up, the evaluation results are printed in tabular format. If `--sign-prediction==True`, the results of sign prediction are printed like the following:
 | Epoch | AUC | Macro-F1 |
 | :-----:| :----: | :----: |
 | 0 | 0.832 | 0.697 |
@@ -107,7 +107,7 @@ When the training is ended up, the evaluation results are printed in tabular for
 | ... | ... | ... |
 | 19 | 0.905 | 0.802 |
 
-And if `--link-prediction==True`, the results are printed like the following:
+And if `--link-prediction==True`, the results of link prediction are printed like the following:
 | Epoch | AUC@p | AUC@n | AUC@non |
 | :-----:| :----: | :----: | :----: |
 | 0 | 0.901 | 0.750 | 0.878 |
