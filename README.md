@@ -4,7 +4,7 @@ Python implementation of the method proposed in
 
 ## Overview
 This repository is organised as follows:
-- `input/` contains four graphs `WikiElec` `WikiRfa` `Slashdot` `Epinions` used in the experiments;
+- `input/` contains four example graphs `WikiElec` `WikiRfa` `Slashdot` `Epinions`;
 - `output/` is the directory to store the learned node embeddings;
 - `src/` contains the implementation of the proposed SLF method.
 
@@ -17,7 +17,7 @@ The implementation is tested under Python 3.7, with the folowing packages instal
 - `tqdm==4.36.1`
 
 ## Input
-The code takes an input graph in `.txt` format. Every row indicates an edge between two nodes separated by a `space` or `\t`. The file does not contain a header. Nodes can be indexed starting with any non-negative number. Four sample graphs (donwloaded from [SNAP](http://snap.stanford.edu/data/#signnets), but node ID is resorted) `WikiElec`, `WikiRfa`, `Slashdot` and `Epinions` are included in the `input/` directory. The structure of the input file is the following:
+The code takes an input graph in `.txt` format. Every row indicates an edge between two nodes separated by a `space` or `\t`. The file does not contain a header. Nodes can be indexed starting with any non-negative number. Four example graphs (donwloaded from [SNAP](http://snap.stanford.edu/data/#signnets), but node ID is resorted) `WikiElec`, `WikiRfa`, `Slashdot` and `Epinions` are included in the `input/` directory. The structure of the input file is the following:
 
 | Source node | Target node | Sign |
 | :-----:| :----: | :----: |
