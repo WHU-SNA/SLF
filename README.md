@@ -84,7 +84,7 @@ python src/main.py --link-prediction False --sign-prediction False
 #### Tasks on signed networks
 For **sign prediction** task, we use `AUC` and `Macro-F1` for evaluation.
 
-For **link prediction** task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is a wrong choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
+For **link prediction** task, we use `AUC@p`, `AUC@n` and `AUC@non` for evaluation. Refer to our paper for detailed description. We adimit that it is not a good choice to use `Micro-F1` for evaluation on a dataset with unbalanced labels, so we removed this metric.
 
 We perform the evaluation after each epoch, and output the provisional result like the following:
 ```
