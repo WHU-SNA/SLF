@@ -2,6 +2,8 @@
 Python implementation of the method proposed in
 "[Link Prediction with Signed Latent Factors in Signed Social Networks](https://dl.acm.org/doi/pdf/10.1145/3292500.3330850)", Pinghua Xu, Wenbin Hu, Jia Wu and Bo Du, SIGKDD 2019.
 
+**NOTE** This implementation can be used to solve both ***link prediction*** and ***sign prediction***.
+
 ## Overview
 This repository is organised as follows:
 - `input/` contains four example graphs `WikiElec` `WikiRfa` `Slashdot` `Epinions`;
